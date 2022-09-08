@@ -1,0 +1,14 @@
+Loops:Loops allow us to execute a block of code several times.
+While loop: Allows us to execute the block of code several times until the condition is True.
+Syntax:
+    initilization
+    while termination-condition:
+          block of code
+          updation
+Example program:
+a=int(input())
+count=0
+while count<3:
+  a=a+1
+  print(a)
+  count=count+1
