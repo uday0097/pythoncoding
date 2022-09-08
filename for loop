@@ -23,3 +23,30 @@ n=int(input())
 for triangle in range(n):
     print("* "*(triangle+1))
 We can also use like starting and ending range example: for num in range(5,7): here ouput is 5 and 6
+Now we will discuss some important problems based on for loop:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
