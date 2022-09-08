@@ -1,1 +1,25 @@
-
+for loop iterates over each item in a sequence.
+syntax: for each_item in sequence:
+           condition             this is for string it is a sequence of characters
+program1:word="python"
+          for each_char in word:
+              print(each_char)     
+              output is:p
+y
+t
+h
+o
+n
+if we want sequence of numbers we use range that is range(n) where n is not included
+for example:
+for number in range(5):
+    print(number)
+output:0
+1
+2
+4
+program: Program to print right angle traingle **
+n=int(input())
+for triangle in range(n):
+    print("* "*(triangle+1))
+We can also use like starting and ending range example: for num in range(5,7): here ouput is 5 and 6
