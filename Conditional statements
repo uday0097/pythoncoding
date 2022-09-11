@@ -24,3 +24,80 @@ Modulus operator:
 To find reminder we use modulus operator
 EXponent to calculate power of b we use 
 for square root we use (a)**0.5
+Nested statements:
+Nested Conditions
+The conditional block inside another if/else conditional block is called as nested conditional block.
+In the below example, Block 2 is nested conditional block and condition B is called nested conditional statement.
+Ex: if conditionA:
+        block1
+        if conditionB:
+              block2
+              block3
+    block4
+EX:matches_won = int(input())
+goals = int(input())
+if matches_won > 8:
+    if goals > 20:
+        print("Hurray")
+    print("Winner")
+INput 10
+22
+output:Hurray
+Winner
+input:10
+18
+Output:Winner
+Nested Condition in Else Block
+We can also write nested conditions in Else Statement.
+
+In the below example Block 2 is a nested conditional block.
+if condition A:
+    block1
+else:
+    if condition B:
+        block2
+        block3
+block4
+Example:
+a = 2
+b = 3
+c = 1
+is_a_greatest = (a > b) and (a > c)
+if is_a_greatest:
+    print(a)
+else:
+    is_b_greatest = (b > c)
+    if is_b_greatest:
+        print(b)
+    else:
+        print(c)
+output:3
+Elif Statement
+Use the elif statement to have multiple conditional statements between if and else.
+
+The elif statement is optional.
+EX if condition A:
+        block1
+   elif condition B:
+        block2
+   else:
+      block3
+Example:
+number = 5
+is_divisible_by_10 = (number % 10 == 0)
+is_divisible_by_5 = (number % 5 == 0)
+if is_divisible_by_10:
+    print("Divisible by 10")
+elif is_divisible_by_5:
+    print("Divisible by 5")
+else:
+   print("Not Divisible by 10 or 5")
+Output:Divisible by 5
+    
+    
+    
+    
+    
+    
+    
+    
