@@ -2,3 +2,21 @@ Block of code:
 A sequence of instructions are called block of code
 Conditional Statement:
 It allows to execute block of code only when a specific condition is True.
+if:
+if condition:
+  block of code
+ Example:
+ if condition:
+    block of code
+ else:
+    block of code
+IN above condition else will execute only when if condition is false
+Example
+a = int(input())
+if a > 0:  
+    print("Positive")  
+else:  
+    print("Not Positive")  
+print("End")
+input is 2
+output is Positive  End
