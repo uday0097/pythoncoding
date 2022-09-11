@@ -1,0 +1,8 @@
+Relational Operators are used to compare values 
+Ex: > < == <= >= !=
+ex: 12==12.0 output is true
+True=="True" false
+Logical operations are used to perform logical operation on boolean values
+And if both conditions are true then only it is true else false
+Or ir any onw condition is true then true else false
+Not will gives opposite value
