@@ -20,3 +20,7 @@ else:
 print("End")
 input is 2
 output is Positive  End
+Modulus operator:
+To find reminder we use modulus operator
+EXponent to calculate power of b we use 
+for square root we use (a)**0.5
