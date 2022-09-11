@@ -1,0 +1,15 @@
+String Slicing
+Obtaining a part of string is called slicing.
+Ex: a[startindex:endindex]
+end index is not included
+Exampleis a[3:7] here 7  is not included
+Slicing to end if end index is not specified slicing stops at end of string
+Ex:a[3:]
+Slicing from start: If start index is not specified then slice starts from index 0
+Ex:[:2]
+if nothing specified it taked from start to end Ex:a[:]
+To check data type then we have to write as type()
+Type Convertion:
+Coverting value of one data type to another data type is called as type casting
+Ex: int to string float to int string to  int etc
+int float str bool
