@@ -60,3 +60,9 @@ for i in range(0,n):
     else:
         result=-((x)**power)+result
         power=power+2
+#WAP to find the hallow triangle
+n=int(input())
+for i in range(1,(n)):
+    left_space=" "*(n-i)+"/"+" "*(i-1)+"|"
+    print(left_space)
+print("/"+"_"*(n-1)+"|")
