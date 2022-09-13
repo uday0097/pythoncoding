@@ -1,0 +1,88 @@
+Extended slicing
+Syntax:  variable[start_index:end_index:step]
+Ex:a = "Waterfall"  
+part = a[1:6:3]  
+print(part)
+o/p:ar
+Methods:
+Python has a set of built-in reusable utilities.
+They simplify the most commonly performed operations are: 
+
+String Methods:
+
+isdigit()
+strip()
+lower()
+upper()
+startswith()
+endswith()
+replace() and more...
+
+Isdigit:
+Syntax: str_var.isdigit()
+
+Gives True if all the characters are digits. Otherwise, False  
+Ex:is_digit = "4748".isdigit()  
+print(is_digit)
+o/p: True
+
+Strip:
+Syntax: str_var.strip()  
+
+Removes all the leading and trailing spaces from a string.  
+Ex:mobile = " 9876543210 "  
+mobile = mobile.strip()  
+print(mobile)
+o/p:9876543210
+Strip - Specific characters
+Syntax: str_var.strip(chars)  
+
+We can also specify characters that need to be removed.  
+Ex:name = "Ravi."  
+name = name.strip(".")  
+print(name)
+o/p:Ravi
+Strip - Multiple Characters
+Removes all spaces, comma(,) and full stop(.) that lead or trail the string. 
+Ex:name = ", .. ,, ravi ,, .. ."  
+name = name.strip(" ,.")  
+print(name)
+o/p:ravi
+Replace
+Syntax: str_var.replace(old,new)  
+
+Gives a new string after replacing all the occurrences of the old substring with the new substring.  
+EX: sentence = "teh cat and teh dog"  
+sentence = sentence.replace("teh","the")  
+print(sentence)
+o/P:the cat and the dog
+Startswith
+Syntax: str_var.startswith(value)  
+
+Gives True if the string starts with the specified value. Otherwise, False  
+Ex:url = "https://onthegomodel.com"  
+is_secure_url = url.startswith("https://")  
+print(is_secure_url)
+o/p:True
+Endswith
+Syntax: str_var.endswith(value)  
+
+Gives True if the string ends with the specified value. Otherwise, False  
+Ex:gmail_id = "rahul123@gmail.com"  
+is_gmail = gmail_id.endswith("@gmail.com")  
+print(is_gmail)
+o/p:True
+Upper
+Syntax: str_var.upper()  
+
+Gives a new string by converting each character of the given string to uppercase.  
+Ex:name = "ravi"  
+print(name.upper())
+o/p:RAVI
+Lower
+Syntax: str_var.lower()  
+
+Gives a new string by converting each character of the given string to lowercase.  
+Ex:name = "RAVI"  
+print(name.lower())
+o/p:ravi
