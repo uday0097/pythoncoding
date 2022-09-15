@@ -1,0 +1,39 @@
+Nested Loops
+An inner loop within the repeating block of an outer loop is called Nested Loop.
+
+The Inner Loop will be executed one time for each iteration of the Outer Loop.
+Ex: for item in A:
+        code1
+        for item in B:
+            code2
+        code3
+    code4
+Progran:
+for i in range(2):
+  print("Outer: " + str(i))
+  for j in range(2):
+    print(" Inner: " + str(j))
+o/p:
+Outer: 0
+ Inner: 0
+ Inner: 1
+Outer: 1
+ Inner: 0
+ Inner: 1
+ Nested Repeating Block
+The one highlighted in the blue dotted line is the repeating block of the inner loop.
+Program:
+for i in range(2):
+  print("Outer: " + str(i))
+  for j in range(2):
+    print(" Inner: " + str(j))
+print("END")
+o/p:Outer: 0
+ Inner: 0
+ Inner: 1
+Outer: 1
+ Inner: 0
+ Inner: 1
+END
+
+
