@@ -1,0 +1,160 @@
+Comparing Strings
+Computer internally stores characters as numbers.
+
+Every character has a unique Unicode value.
+
+Ord
+To find the Unicode value of a character, we use the ord()
+
+ord(character) gives unicode value of the character.
+Ex:
+unicode_value = ord("A")
+print(unicode_value)
+o/p:
+65
+chr
+To find the character with the given Unicode value, we use the chr()
+
+chr(unicode) gives character with the unicode value.  
+char = chr(75)
+print(char)
+o/p: K
+Unicode Ranges
+48 - 57 -> Number Digits (0 - 9)
+
+65 - 90 -> Capital Letters (A - Z)
+
+97 - 122 -> Small Letters (a - z)
+
+Rest -> Special Characters, Other Languages
+
+Printing Characters
+The below code will print the characters from A to Z
+ex:
+for unicode_value in range(65,91):
+    print(chr(unicode_value))
+Comparing Strings
+In Python, strings are compared considering unicode.
+Ex:print("A" < "B") T
+As unicode value of A is 65 and B is 66, which internally compares 65 < 66 . So the output should be True
+
+Character by Character Comparison
+In Python, String Comparison is done character by character.
+
+print("BAD" >= "BAT")   F
+print("98" < "984")     T
+Naming Variables Rule #1
+Use only the below characters  
+
+Capital Letters ( A – Z )
+Small Letters ( a – z )
+Digits ( 0 – 9 )
+Underscore(_)
+
+Examples:
+age, total_bill
+Naming Variables Rule #2
+Below characters cannot be used  
+
+Blanks ( )
+Commas ( , )
+Special Characters
+( ~ ! @ # $ % ^ . ?, etc. )
+Naming Variables Rule #3
+Variable name must begin with  
+
+Capital Letters ( A – Z )
+Small Letters ( a – z )
+Underscore( _ )
+Naming Variables Rule #4
+Cannot use Keywords, which are reserved for special meaning  
+
+int
+str
+print etc.,
+Keywords
+Words which are reserved for special meaning  
+help("keywords")
+Case Styles
+Camel case: totalBill
+Pascal case: TotalBill
+Snake case: total_bill
+Snake case is preferred for naming the variables in Python.
+Round
+Rounding Numbers
+round(number, digits(optional))  Rounds the float value to the given number of decimal digits.
+
+digits -> define the number of decimal digits to be considered for rounding.
+
+when not specified default is 0
+a = round(3.14,1)
+print(a)
+a = round(3.14)
+print(a)
+o/p 3.1 3
+Floating Point Approximation
+Float values are stored approximately.
+print(0.1 + 0.2) 0.3000000000004
+Floating Point Errors
+Sometimes, floating point approximation gives unexpected results.
+print((0.1 + 0.2) == 0.3) F
+Comments
+Comment starts with a hash #  
+
+It can be written in  its own line next to a statement of code.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
