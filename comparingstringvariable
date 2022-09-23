@@ -102,6 +102,46 @@ Comments
 Comment starts with a hash #  
 
 It can be written in  its own line next to a statement of code.
+Floor Division Operator
+To find integral part of quotient we use Floor Division Operator //
+
+a // b
+print(3 // 2) o/p 1
+Different compound assignment operators are +=, -=, *=, /=, %=
+
+a += 1 is similar to a = a + 1
+a = 10
+a -= 2
+print(a)  o/p 8
+a = 10
+a /= 2
+print(a)  o/p 5.0
+a = 10
+a %= 2
+print(a)  o/p  0
+Escape Characters
+Single And Double Quotes
+String is a sequence of characters enclosed within quotes.
+sport = 'Cricket'
+print(type(sport))
+sport = "Cricket"
+print(type(sport))
+Escape Characters are a sequence of characters in a string that are interpreted differently by the computer.
+We use escape characters to insert characters that are illegal in a string.
+print("Hello\nWorld") o/p  hello world
+We got a new line by adding \n escape character.
+
+Examples - Escape Characters
+Escape Characters start with a backslash in Python
+
+\n -> New Line
+\t -> Tab Space
+\\ -> Backslash
+\' -> Single Quote
+\" -> Double Quote
+Passing Strings With Quotes
+The backslash \ character here tells Python not to consider the next character as the ending of the string.
+print('It\'s Python')
 
 
 
