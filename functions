@@ -1,0 +1,260 @@
+Functions
+Block of reusable code to perform a specific action.
+
+Reusing Code
+Using an existing code without writing it every time we need.
+def greet():
+    print("Hello")
+
+name = input()
+print(name) i/p:teja
+o/p: Teja
+Defining a Function
+Function is uniquely identified by the function_name
+def greet():
+    print("Hello")
+
+name = input()
+print(name)
+ip: Teja
+op: Teja
+Calling a Function
+The functional block of code is executed only when the function is called.
+def greet():
+    print("Hello")
+
+name = input()
+greet()
+print(name)
+ip: Teja
+op:hello
+teja
+Defining & Calling a Function
+A function should be defined before it is called.
+name = input()
+greet()
+print(name)
+
+def greet():
+    print("Hello")
+ip: teja
+op:name greet is not defined
+Printing a Message
+Consider the following scenario, we want to create a function, that prints a custom message, based on some variable that is defined outside the function. In the below code snippet, we want to access the value in the variable name at line 2 in place of the ?. 
+def greet():
+    msg = "Hello " + ? 
+    print(msg)
+
+name = input()
+greet()
+ip:teja
+op:hello teja
+We use the concept of Function Arguments for these types of scenarios.
+Function With Arguments
+We can pass values to a function using an Argument.
+def greet(word):
+    msg = "Hello " + word
+    print(msg)
+
+name = input()
+greet(word=name)
+ip:teja
+op:hello teja
+Variables Inside a Function
+A variable created inside a function can only be used in it.
+def greet(word):
+    msg = "Hello " + word
+
+name = input()
+greet(word=name)
+print(msg)
+ip"teja
+op: name msg is not defined
+Returning a Value
+To return a value from the function use return keyword.
+Exits from the function when return statement is executed
+def greet(word):
+    msg = "Hello " + word
+    return msg
+
+name = input()
+greeting = greet(word=name)
+print(greeting)
+ip:teja
+op:hello teja
+Code written after return statement will not be executed.
+def greet(word):
+    msg = "Hello "+word
+    return msg
+    print(msg)
+
+name = input()
+greeting = greet(word=name)
+print(greeting)
+ip teja
+op hello teja
+Built-in Functions
+We are already using functions which are pre-defined in Python.
+Built-in functions are readily available for reuse
+
+print()
+int()
+str()
+len()
+Function Arguments
+A function can have more than one argument.
+Keyword Arguments
+Passing values by their names.
+def greet(arg_1, arg_2):
+  print(arg_1 + " " + arg_2)
+
+greeting = input()
+name = input()
+greet(arg_1=greeting,arg_2=name)
+ip:Good Morning
+Ram
+opGood Morning Ram
+Possible Mistakes - Keyword Arguments
+def greet(arg_1, arg_2):
+    print(arg_1 + " " + arg_2)
+
+greeting = input()
+name = input()
+greet(arg_2=name)
+ip good morning
+ram
+op:TypeError: greet() missing 1 required positional arg
+Positional Arguments
+Values can be passed without using argument names.
+
+These values get assigned according to their position.
+Order of the arguments matters here.
+def greet(arg_1, arg_2):
+    print(arg_1 + " " + arg_2)
+
+greeting = input()
+name = input()
+greet(greeting,name)
+Good Morning
+Ram
+op:Good Morning Ram
+Possible Mistakes - Positional Arguments
+Mistake - 1
+def greet(arg_1, arg_2):
+ print(arg_1 + " " + arg_2)
+
+greeting = input()
+name = input()
+greet(greeting)
+ip good morning
+ram
+opTypeError: greet() missing 1 required positional ar
+Mistake - 2
+def greet(arg_1, arg_2):
+ print(arg_1 + " " + arg_2)
+
+greeting = input()
+name = input()
+greet()
+ip good morning
+ram
+opTypeError: greet() missing 2 required positio
+Default Values
+def greet(arg_1="Hi", arg_2="Ram"):
+    print(arg_1 + " " + arg_2)
+
+greeting = input()
+name = input()
+greet()
+ip hello teja
+op hi ram
+Example - 2
+def greet(arg_1="Hi", arg_2="Ram"):
+    print(arg_1 + " " + arg_2)
+
+greeting = input()
+name = input()
+greet(greeting)
+ip hello teja
+op hello ram
+Example - 3
+def greet(arg_1="Hi", arg_2="Ram"):
+    print(arg_1 + " " + arg_2)
+
+greeting = input()
+name = input()
+greet(name)
+ip hello teja
+op teja ram
+Example - 4
+def greet(arg_1="Hi", arg_2="Ram"):
+    print(arg_1 + " " + arg_2)
+
+greeting = input()
+name = input()
+greet(arg_2=name)
+ip hello teja
+op hi teja
+Example - 5
+def greet(arg_1="Hi", arg_2):
+    print(arg_1 + " " + arg_2)
+
+greeting = input()
+name = input()
+greet(arg_2=name)
+ip hello teja
+op SyntaxError:non-default argument follows defa
+Non-default arguments cannot follow default arguments.
+Example - 6
+def greet(arg_2, arg_1="Hi"):
+    print(arg_1 + " " + arg_2)
+
+greeting = input()
+name = input()
+greet(arg_2=name)
+ip hello teja
+op hi teja
+Passing Immutable Objects
+def increment(a):
+    a += 1
+    
+a = int(input())
+increment(a)
+print(a)
+ip 5
+op 5
+Even though variable names are same, they are referring to two different objects.
+Changing the value of the variable inside the function will not affect the variable outside.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
